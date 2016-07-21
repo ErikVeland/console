@@ -1,0 +1,208 @@
+/*
+___________      .__ __    
+\_   _____/______|__|  | __
+ |    __)_\_  __ \  |  |/ /
+ |        \|  | \/  |    < 
+/_______  /|__|  |__|__|_ \
+        \/               \/
+*/
+/* @group Base reset */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-weight: normal;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {display: block;}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img,
+object,
+embed {max-width: 100%;}
+
+
+html {overflow-y: scroll;}
+
+/* @end */
+
+/* @group Defaults */
+
+body {
+	font: normal 1em/1em sans-serif;
+}
+
+.container {
+	width: 70vw;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	margin: 167px auto 0;
+	overflow: hidden;
+}
+
+header {
+	font-size: 1.5em;
+	white-space: nowrap;
+}
+
+.container section {
+	border-bottom: 1px solid #e2e2e2;
+	padding: 3.5vh 1vw;
+	overflow: hidden;
+	position: relative;
+}
+
+
+/* @end */
+
+/* @group Main */
+
+.main {
+	width:39.5vw;
+	float: left;
+	position: relative;
+}
+
+header,
+.main .sub-header {
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 25vw;
+  /* Fallback for non-webkit */
+  line-height: 1.4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.main .card .sub-header {
+	max-width: 26vw;
+	-webkit-line-clamp: 2;
+}
+
+.main header {
+	white-space: nowrap;
+}
+
+.main .avatar,
+.main .content {
+	float: left;
+}
+
+.main .card {
+	float: right;
+	border-right: 1px solid #e2e2e2;
+	margin: 30px 0;
+	padding-right: 1vw;
+}
+
+.main .card .content {
+	float: left;
+}
+/* @end */
+
+/* @group Secondary */
+
+.secondary {
+	width: 22vw; /* non-aligned width to match design */
+	float: left;
+	position: relative;
+	text-align: center;
+}
+
+.group {
+	width: 33.33%;
+	float: left;
+	padding: 1.8vh 1.4vw;
+	font-size: .75em;
+	line-height: 1.6em;
+}
+.group a {
+	width: 100%;
+	display: block;
+}
+
+.secondary .sub-header {
+	display: none;
+}
+
+.secondary .sub-header {
+	display: none;
+}
+
+.secondary header {
+	font-size: 1em;
+	display: inline-block;
+}
+
+.secondary .card {
+	width: 100%;
+	text-align: center;
+}
+
+.group:last-of-type  {
+	float: right;
+	width: 120px; /* Not what I'd do, but matching design */
+}
+
+/* @end */
+
+/* @group Icons */
+
+.avatar {
+	background: #1485cc;
+	border-radius: 50%;
+	-webkit-font-smoothing: antialiased;
+	box-sizing: border-box;
+	color: #fff;
+	display: inline-block;
+	font-family: FontAwesome;
+	font-size: 32px;
+	font-style: normal;
+	font-variant-caps: normal;
+	font-weight: normal;
+	margin-right: 20px;
+	text-rendering: auto;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+
+.secondary .avatar {
+	width: 48px;
+	height: 48px;
+	line-height: 48px ;
+	font-size: 17px;
+	margin-right: 0px;
+}
+
+.pied-piper:before {
+  content: "\f2ae";
+}
+
+.paper-plane:before {
+  content: "\f1d8";
+}
+
+.child:before {
+  content: "\f1ae";
+}
+
+
+/* @end */
